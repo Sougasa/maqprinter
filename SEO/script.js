@@ -56,5 +56,5 @@ document.querySelectorAll(".sidebar a").forEach(link => {
 
 // Redirecionamento ao clicar no botão de seta
 document.getElementById('menuRedirectButton').addEventListener('click', () => {
-  window.location.href = 'maqprinter/index.html'; // Caminho do outro HTML
+  window.location.href = '/maqprinter/index.html'; // Caminho do outro HTML
 });
