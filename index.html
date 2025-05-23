@@ -1,0 +1,192 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Maqprinter</title>
+        <meta name="description" content="Conserto, manutenção e venda de impressoras profissionais desde 1988." />
+        <link rel="icon" href="icone.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+    <header>
+        <div class="logo-container">
+            <img src="imgs/logo.png" alt="Logo Maqprinter" />
+        </div>
+        <nav>
+            <a href="#inicio" class="nav-link active">Início</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#produtos" class="nav-link">Produtos</a>
+            <a href="#contato" class="nav-link">Contato</a>
+            <a href="#mapa" class="nav-link">Localização</a>
+            <a href="#depoimentos" class="nav-link">Avaliações</a> 
+        </nav>
+        <div class="header-actions">
+            <div class="destaque">Desde 1988</div>
+            <button id="btnSolicitarRetirada" class="btn-solicitar-retirada" aria-haspopup="dialog">
+                Solicite a retirada
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="banner">
+            <div class="banner-text">
+                <h1>Assistencia técnica especializada impressoras</h1>
+                <p>Fazemos orçamento gratuito! Clique abaixo para saber mais.</p>
+                <a href="#contato" class="btn-primary">Entre em contato</a>
+            </div>
+        <div class="banner-slider">
+            <img src="banners/banner1.jpg" alt="Banner 1" class="active" />
+            <img src="banners/banner2.jpg" alt="Banner 2" />
+            <img src="banners/banner3.jpg" alt="Banner 3" />
+            <img src="banners/banner4.jpg" alt="Banner 4" />
+            <img src="banners/banner5.png" alt="Banner 5" />
+            <img src="banners/banner6.png" alt="Banner 6" />
+        </div>
+        </section>
+
+        <section id="servicos" class="section">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <img src="imgs/plotter.png" alt="Plotter">
+                    <h3>Plotter</h3>
+                    <p>Assistência técnica especializada e venda de plotters.</p>
+                </div>
+                <div class="servico-card">
+                    <img src="imgs/impressora.png" alt="Impressora">
+                    <h3>Impressora</h3>
+                    <p>Manutenção preventiva e corretiva de impressoras de diversas marcas.</p>
+                </div>
+                <div class="servico-card">
+                    <img src="imgs/scanner.png" alt="Scanner">
+                    <h3>Scanner</h3>
+                    <p>Conserto e venda de scanners profissionais.</p>
+                </div>
+                <div class="servico-card">
+                    <img src="imgs/calculadora.png" alt="Calculadora">
+                    <h3>Calculadora</h3>
+                    <p>Venda de calculadoras profissionais e suprimentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="section">
+            <h2>Nossos Produtos</h2>
+            <p>Oferecemos uma vasta gama de impressoras, suprimentos e acessórios para atender às suas necessidades.</p>
+            <div class="produtos-grid">
+                <div class="produto-item">
+                    <img src="impressoras/Epson EcoTank.png" alt="Epson EcoTank">
+                    <h3>Epson EcoTank</h3>
+                    <p>Uma linha de impressoras da Epson com tanques de tinta recarregáveis (em vez de cartuchos).</p>
+                </div>
+                <div class="produto-item">
+                    <img src="impressoras/HP LaserJet.png" alt="HP LaserJet">
+                    <h3>HP LaserJet</h3>
+                    <p>Linha de impressoras a laser da HP, conhecidas pela velocidade e eficiência.</p>
+                </div>
+                <div class="produto-item">
+                    <img src="impressoras/Plotter HP DesignJet.png" alt="Plotter HP DesignJet">
+                    <h3>Plotter HP DesignJet</h3>
+                    <p>Impressora de grande formato da HP, chamada de plotter, usada para imprimir projetos técnicos, plantas, cartazes e gráficos.</p>
+                </div>
+                </div>
+            <a href="https://www.mercadolivre.com.br" class="btn-secondary" target="_blank" rel="noopener noreferrer">Ver todos os produtos</a>
+
+        </section>
+
+        <section id="contato" class="section contato-section">
+            <h2>Entre em Contato</h2>
+            <p class="contact-info"><b>Telefone:</b> (11) 3864-9611 / 93002-1008</p>
+            <p class="contact-info"><b>Email:</b> contato@maqprinter.com.br</p>
+            <p class="contact-info"><b>Endereço:</b> Rua Monteiro de Melo, 614 - Lapa, São Paulo/SP</p>
+                <form action="https://formspree.io/f/mzzrwpoe" method="POST" id="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+        </section>
+
+        <section id="mapa" class="section">
+            <h2>Localização</h2>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.792961160037!2d-46.70777412470797!3d-23.54018886436473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef89bbf9ddc3d%3A0xca8515831093a11c!2sR.%20Monteiro%20de%20Melo%2C%20614%20-%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005078-000!5e0!3m2!1spt-BR!2sbr!4v1716068784197!5m2!1spt-BR!2sbr"
+                                width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" title="Mapa Maqprinter"></iframe>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="section depoimentos-section">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <p class="quote">"A Maqprinter sempre nos atende com rapidez e eficiência. A manutenção das nossas impressoras é impecável!"</p>
+                    <p class="author">- Carlos Silva, Gerente de TI</p>
+                </div>
+                <div class="depoimento-card">
+                    <p class="quote">"Encontramos na Maqprinter não só ótimos produtos, mas também um suporte técnico excelente. Recomendo!"</p>
+                    <p class="author">- Ana Rodrigues, Empresária</p>
+                </div>
+                <div class="depoimento-card">
+                    <p class="quote">"Desde que começamos a usar os serviços da Maqprinter, nossos problemas com impressoras diminuíram significativamente."</p>
+                    <p class="author">- Paulo Oliveira, Coordenador Administrativo</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="seo-palavras" class="section seo-section">
+        <h2>Explore Mais</h2>
+        <div class="seo-keywords">
+            <strong>Veja mais sobre:</strong>
+            <a href="SEO/index-seo.html">Plotter HP</a>
+            <a href="SEO/index-seo.html">Epson L3250</a>
+            <a href="SEO/index-seo.html">Impressora Térmica</a>
+            <a href="SEO/index-seo.html">Manutenção de Impressoras</a>
+            <a href="SEO/index-seo.html">Assistência Lexmark</a>
+            <a href="SEO/index-seo.html">Conserto Brother</a>
+            <a href="/SEO/index-seo.html">Impressora Laser</a>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5511930021008?text=Olá!%20Gostaria%20de%20mais%20informações" target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+        <img src="imgs/whatsapp.png" alt="WhatsApp" />
+    </a>
+
+    <button id="btnTopo" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
+
+    <div id="popupRetirada" class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-describedby="popupDesc" hidden>
+        <div class="popup-content">
+            <button id="btnClosePopup" class="btn-close" aria-label="Fechar formulário">×</button>
+            <h2 id="popupTitle">Solicite a Retirada</h2>
+            <p id="popupDesc">Preencha os dados para solicitar a retirada da sua impressora.</p>
+            <form id="formRetirada">
+                <label for="nomeRetirada">Nome:</label>
+                <input type="text" id="nomeRetirada" name="nomeRetirada" required />
+
+                <label for="cepRetirada">CEP:</label>
+                <input type="text" id="cepRetirada" name="cepRetirada" pattern="\d{5}-?\d{3}" placeholder="00000-000" required />
+
+                <label for="telefoneRetirada">Telefone:</label>
+                <input type="tel" id="telefoneRetirada" name="telefoneRetirada" pattern="\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}" placeholder="(00) 00000-0000" required />
+
+                <label for="modeloRetirada">Modelo da Impressora:</label>
+                <input type="text" id="modeloRetirada" name="modeloRetirada" required />
+
+                <button type="submit" class="btn-primary">Enviar solicitação</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Maqprinter - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

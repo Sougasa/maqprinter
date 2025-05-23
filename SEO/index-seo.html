@@ -1,0 +1,65 @@
+<!-- servicos.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços de Impressoras</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<header class="topbar">
+  <button id="toggleSidebar" class="icon-button">
+    <i data-lucide="menu"></i>
+  </button>
+
+  <!-- Botão de flecha circular com redirecionamento -->
+<button id="menuRedirectButton" class="icon-button tooltip">
+  <i data-lucide="rotate-ccw"></i>
+  <span class="tooltip-text">Voltar para o site principal</span>
+</button>
+
+  <h1>Serviços</h1>
+
+  <button id="toggleTheme" class="icon-button">
+    <i data-lucide="moon"></i>
+  </button>
+</header>
+
+<div class="container">
+  <nav class="sidebar" id="sidebar">
+    <h2>Serviços</h2>
+    <ul>
+      <li><i data-lucide="printer"></i> <a href="#" data-key="plotter">Plotter HP</a></li>
+      <li><i data-lucide="printer"></i> <a href="#" data-key="epson">Epson L3250</a></li>
+      <li><i data-lucide="receipt-text"></i> <a href="#" data-key="termica">Impressora Térmica</a></li>
+    </ul>
+
+    <h2>Marcas</h2>
+    <ul>
+      <li><i data-lucide="scan-barcode"></i> <a href="#" data-key="lexmark">Lexmark</a></li>
+      <li><i data-lucide="scan-text"></i> <a href="#" data-key="brother">Brother</a></li>
+    </ul>
+
+    <h2>Serviços Técnicos</h2>
+    <ul>
+      <li><i data-lucide="wrench"></i> <a href="#" data-key="conserto">Conserto</a></li>
+      <li><i data-lucide="zap"></i> <a href="#" data-key="laser">Impressora Laser</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Bem-vindo</h2>
+    <p>Selecione uma opção no menu à esquerda para ver os serviços disponíveis.</p>
+  </main>
+</div>
+
+<footer class="footer">
+  <p>© 2025 Maqprinter - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
