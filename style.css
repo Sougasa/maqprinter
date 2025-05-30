@@ -1214,7 +1214,7 @@ main {
 }
 
 /* Ajustes para telas menores (celulares) - MANTENHA ESTE BLOCO */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   header {
     padding: 10px 15px;
     flex-direction: column;
@@ -1346,5 +1346,27 @@ main {
 
   .popup-content {
     padding: 30px;
+  }
+}
+
+header nav {
+  display: none;
+}
+
+header {
+  justify-content: center; /* Centraliza a logo já que a navegação sumiu */
+}
+
+@media (max-width: 600px) {
+  header nav {
+    display: none; /* Garante que continue oculto em telas menores */
+  }
+  header {
+    justify-content: center; /* Centraliza a logo em telas menores também */
+    flex-direction: column; /* Se houver outros elementos no header em mobile */
+    align-items: center;
+  }
+  .header-actions {
+    display: none !important; /* Oculta também o botão de retirada em mobile */
   }
 }
