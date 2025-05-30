@@ -215,3 +215,49 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.mobile-nav-toggle');
+    const header = document.querySelector('header');
+    const logoContainer = document.querySelector('.logo-container');
+    let isCollapsed = false;
+
+    if (navToggle && header && logoContainer) {
+        // Define o estado inicial do header como "recolhido" em mobile
+        if (window.innerWidth <= 768) {
+            header.classList.add('collapsed');
+            navToggle.innerHTML = '<span class="arrow-down">▼</span>';
+            isCollapsed = true;
+
+            // Ajusta o padding do main inicialmente (considerando a altura da logo)
+            const headerHeightCollapsed = document.querySelector('.logo-container').offsetHeight + 20; // Altura da logo + um pouco de espaço
+            document.querySelector('main').style.paddingTop = `${headerHeightCollapsed}px`;
+        }
+
+        navToggle.addEventListener('click', function() {
+            header.classList.toggle('collapsed');
+            isCollapsed = !isCollapsed;
+            navToggle.innerHTML = isCollapsed ? '<span class="arrow-down">▼</span>' : '<span class="arrow-up">▲</span>';
+
+            // Ajusta o padding do main na transição
+            const headerHeight = header.offsetHeight;
+            document.querySelector('main').style.paddingTop = `${headerHeight + 20}px`;
+        });
+
+        // Recalcula o padding do main em redimensionamento
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                header.classList.remove('collapsed');
+                navToggle.innerHTML = '<span class="arrow-down">▼</span>';
+                isCollapsed = false;
+                document.querySelector('main').style.paddingTop = '140px'; // Seu padding original para desktop
+            } else if (isCollapsed) {
+                const headerHeightCollapsed = document.querySelector('.logo-container').offsetHeight + 20;
+                document.querySelector('main').style.paddingTop = `${headerHeightCollapsed}px`;
+            } else {
+                const headerHeight = header.offsetHeight;
+                document.querySelector('main').style.paddingTop = `${headerHeight + 20}px`;
+            }
+        });
+    }
+});
