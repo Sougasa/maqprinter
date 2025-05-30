@@ -1214,7 +1214,7 @@ main {
 }
 
 /* Ajustes para telas menores (celulares) - MANTENHA ESTE BLOCO */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   header {
     padding: 10px 15px;
     flex-direction: column;
